@@ -1,4 +1,25 @@
-第一学
-对方的
+# Git命令
+  一定要切换到git项目下
+1. git init：初始化git仓库。
+2. git status：在master分支下，查看仓库的状态。
+3. git add 文件：把文件提交到git提交到仓库里。
+4. git commit -m '提交说明'：把所有在缓存仓库的文件提交到正式的仓库。
+5. git log：查看所有产生的 commit 记录。
+6. git branch a：新建一个名字为a的分支，主分支为master，a分支和master分支的仓库内容是一样的。
+7. git branch：查看当前的分支情况。
+8. git checkout b：将开发切换到b分支上。
+9. git checkout -b a：建立a分支并且将开发切换到a分支上。
+10. git merge a：执行此命令，先切换到master分支中，其次将a分支中的代码合并到主分支上。
+11. git branch -d a：删除a分支。
+12. git branch -D a：因为a分支的代码还未合并，a分支是无法删除的，可以使用此命令强制删除a分支。
+13. git tag v1.0：给当前的代码新建一个v1.0的标签。
+14. git checkout v1.0：切换到v1.0的标签下的代码
 
-v方法v得到
+# GitHub内容
+1. 生产SSH Key：在Git bash中输入：ssh-keygen -t rsa， rsa 算法生成密钥，连续三次回车，不需要输入密码，在本地会生成id_rsa（密钥）和id_ras.pub（公钥），接下来要做的是把 id_rsa.pub 的内容添加到 GitHub 上，这样你本地的 id_rsa 密钥跟 GitHub上的 id_rsa.pub 公钥进行配对，授权成功才可以提交代码。
+2. 个人设置->SSH and GPG keys->New SSH key->把 id_rsa.pub 公钥文件里的内容复制粘贴进去就可以了，输入ssh -T git@github.com可以进行测试是否添加成功。
+3. git push origin master：如果你本地代码有更新了， 那么就需要把本地代码推到远程仓库， 这样本地仓库跟远程仓库就可以保持同步了。
+4. git pull origin master：如果别人提交代码到远程仓库， 这个时候你需要把远程仓库的最新代码拉下来， 然后保证两端代码的同步。
+5. clone到本地：git clone git@github.com:git/Flask，把Flask项目复制到本地，如果你在本地的项目进行了更改，使用git commit命令，最后使用git push origin master进行代码提交。
+
+
