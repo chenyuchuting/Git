@@ -1,2 +1,17 @@
 # Git进阶
-1. 
+1. git查看暂存区域的内容
+    1.1 git ls-files：令是用来查看暂存区中文件信息
+    --cached(-c)显示暂存区中的文件，git ls-files命令默认的参数
+    --deleted(-d)显示删除的文件
+    --modified(-m) 显示修改过的文件
+    --other(-o)显示没有被git跟踪的文件
+    --stage(-s) 显示mode以及文件对应的Blob对象，进而我们可以获取暂存区中对应文件里面的内容。
+2. git删除文件
+    2.1 git rm –cached “文件路径”，不删除物理文件，仅将该文件从缓存中删除.
+    2.2 一种是 git rm –f “文件路径”，不仅将该文件从缓存中删除，还会将物理文件删除。
+3. git如何把本地文件上传到远程仓库的指定位置
+    git add .
+    git commit -m '注释'
+    git push origin master
+4. 解决git bash 终端显示中文乱码
+    在git bash的界面中右击空白处，弹出菜单，选择选项->文本->本地Locale，设置为zh_CN，而旁边的字符集选框选为UTF-8。
