@@ -1,5 +1,7 @@
 # Git命令
-  一定要切换到git项目下
+    一定要切换到git项目下，下面是设置项目级别的内容。
+    git config user.name chenyuchuting
+    git config user.email 757403038@qq.com
 1. git init：初始化git仓库。
 2. git status：在master分支下，查看仓库的状态。
 3. git add 文件：把文件提交到git提交到仓库里。
