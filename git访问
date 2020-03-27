@@ -23,3 +23,8 @@
     185.199.111.153 assets-cdn.github.com
     199.232.5.194 github.global.ssl.fastly.net
     199.232.5.194 github.global.ssl.fastly.net
+# git的访问加上如下的代码也可以
+    192.30.253.112 github.com
+    185.199.111.153 assets-cdn.github.com
+    151.101.193.194 github.global.ssl.fastly.net
+    185.199.110.153 onregularinvesting.com
